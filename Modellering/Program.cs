@@ -2,11 +2,19 @@
 
 namespace Modellering
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      Football theBall = new Football();
+      Football theOtherBall = new Football();
+
+      theBall.x = 40;
+      theOtherBall.x = 60;
+
+      System.Console.WriteLine(theBall.x);
+
+      Console.ReadLine();
     }
+  }
 }
